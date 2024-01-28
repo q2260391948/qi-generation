@@ -3,32 +3,32 @@ package com.xiaozhang.acm;
 import java.util.Scanner;
 
 /**
- * ACM è¾“å…¥æ¨¡æ¿ï¼ˆå¤šæ•°ä¹‹å’Œï¼‰
- * @author å°å¼ 
- */
+* ACM ÊäÈëÄ£°å£¨¶àÊıÖ®ºÍ£©
+* @author å°å¼ 
+*/
 public class MainTemplate {
-    public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
 
-        while (scanner.hasNext()) {
-// è¯»å–è¾“å…¥å…ƒç´ ä¸ªæ•°
-            int n = scanner.nextInt();
+    while (scanner.hasNext()) {
+// ¶ÁÈ¡ÊäÈëÔªËØ¸öÊı
+int n = scanner.nextInt();
 
-// è¯»å–æ•°ç»„
-            int[] arr = new int[n];
-            for (int i = 0; i < n; i++) {
-                arr[i] = scanner.nextInt();
-            }
+// ¶ÁÈ¡Êı×é
+int[] arr = new int[n];
+for (int i = 0; i < n; i++) {
+arr[i] = scanner.nextInt();
+}
 
-// å¤„ç†é—®é¢˜é€»è¾‘ï¼Œæ ¹æ®éœ€è¦è¿›è¡Œè¾“å‡º
-// ç¤ºä¾‹ï¼šè®¡ç®—æ•°ç»„å…ƒç´ çš„å’Œ
-            int sum = 0;
-            for (int num : arr) {
-                sum += num;
-            }
-            System.out.println("è¾“å‡ºå•¦: " + sum);
-        }
-
-        scanner.close();
+// ´¦ÀíÎÊÌâÂß¼­£¬¸ù¾İĞèÒª½øĞĞÊä³ö
+// Ê¾Àı£º¼ÆËãÊı×éÔªËØµÄºÍ
+int sum = 0;
+for (int num : arr) {
+sum += num;
     }
+System.out.println("æˆ‘æ˜¯ç¬¨è›‹: " + sum);
+}
+
+scanner.close();
+}
 }

@@ -11,5 +11,5 @@ import lombok.Data;
 public class Config {
     private String author;
     private String outputText;
-    private Boolean loop;
+    private Boolean loop;   
 }

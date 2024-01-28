@@ -22,7 +22,7 @@ public class MainTest {
     @Test
     public void test1() throws IOException, TemplateException {
         // new 出 Configuration 对象，参数为 FreeMarker 版本号
-        Configuration configuration = new Configuration(Configuration.VERSION_2_3_32);
+        Configuration configuration = new Configuration(Configuration.VERSION_2_3_27);
 
         // 指定模板文件所在的路径
         configuration.setDirectoryForTemplateLoading(new File("src/main/resources/templates"));
@@ -54,7 +54,7 @@ public class MainTest {
     @Test
     public void test2() throws IOException, TemplateException {
         // new 出 Configuration 对象，参数为 FreeMarker 版本号
-        Configuration configuration = new Configuration(Configuration.VERSION_2_3_32);
+        Configuration configuration = new Configuration(Configuration.VERSION_2_3_27);
 
         // 指定模板文件所在的路径
         configuration.setDirectoryForTemplateLoading(new File("src/main/resources/templates"));

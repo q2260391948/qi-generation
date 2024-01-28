@@ -3,30 +3,34 @@ package com.xiaozhang.acm;
 import java.util.Scanner;
 
 /**
-* ACM ����ģ�壨����֮�ͣ�
-* @author С��
+* ACM 输入模板（多数之和）
+* @author ${author}
 */
 public class MainTemplate {
 public static void main(String[] args) {
 Scanner scanner = new Scanner(System.in);
 
+<#if loop??>
     while (scanner.hasNext()) {
-// ��ȡ����Ԫ�ظ���
+</#if>
+// 读取输入元素个数
 int n = scanner.nextInt();
 
-// ��ȡ����
+// 读取数组
 int[] arr = new int[n];
 for (int i = 0; i < n; i++) {
 arr[i] = scanner.nextInt();
 }
 
-// ���������߼���������Ҫ�������
-// ʾ������������Ԫ�صĺ�
+// 处理问题逻辑，根据需要进行输出
+// 示例：计算数组元素的和
 int sum = 0;
 for (int num : arr) {
 sum += num;
+<#if loop??>
     }
-System.out.println("�����: " + sum);
+</#if>
+System.out.println("${outputText}: " + sum);
 }
 
 scanner.close();
